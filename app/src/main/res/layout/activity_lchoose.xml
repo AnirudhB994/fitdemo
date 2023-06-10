@@ -1,9 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LChoose">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/wtsapp_green"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Fitness Friend"
+
+        app:titleTextColor="#FFF" />
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:text="Confused what to choose \n           Leave Upon us"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FF000000"
+        android:paddingLeft="55dp"
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your height in meters"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your weight in kilograms"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:text="You come under healthy weight section\n So you should go with:-"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#FF000000"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="20dp"
+        android:text="FULL BODY  AND\nUPPER BODY WORKOUT \nALTERNATE DAYS RESPECTIVELY"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="#FF000000"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="60dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/redirect"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/answer"
+        android:layout_marginTop="20dp"
+        android:text="REDIREECT ME"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

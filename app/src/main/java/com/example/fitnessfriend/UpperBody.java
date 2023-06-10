@@ -35,6 +35,7 @@ public class UpperBody extends AppCompatActivity {
                 int pos=i;
                 Intent intent = new Intent(getApplicationContext(),remdest.class);
                 intent.putExtra("indic",pos);
+                intent.putExtra("class","upperbody");
                 startActivity(intent);
             }
         });

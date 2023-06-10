@@ -1,5 +1,36 @@
 <resources>
     <string name="app_name">Fitness Friend</string>
 
+    <string name="underweight"><b>1) Underweight</b>:\n
 
+Breakfast: Include a combination of carbohydrates (whole grains, fruits), protein (eggs, yogurt, nuts), and healthy fats (avocado, nut butter).\n\n
+
+Lunch: Opt for a balanced meal with complex carbohydrates (brown rice, quinoa), lean proteins (chicken, fish, tofu), healthy fats (olive oil, seeds), and plenty of vegetables.\n\n
+
+Dinner: Similar to lunch, focus on a mix of carbohydrates, proteins, and fats. Include a variety of nutrient-dense foods to increase calorie intake.\n\n</string>
+
+    <string name="healthyweight"><b>2) Normal Weight:</b>\n
+
+Breakfast: Include a source of carbohydrates (oatmeal, whole grain bread), protein (eggs, Greek yogurt), and fruits or vegetables for added nutrients.\n\n
+
+Lunch: Aim for a balanced meal with lean proteins (chicken, fish, legumes), whole grains (brown rice, whole wheat pasta), healthy fats (avocado, olive oil), and vegetables.\n\n
+
+Dinner: Similar to lunch, ensure a balance of macronutrients with an emphasis on whole foods, including lean proteins, complex carbohydrates, and vegetables.\n\n
+</string>
+    <string name="overweight">
+        <b>3) Overweight:</b>\n
+
+Breakfast: Choose a high-fiber cereal or oatmeal with fresh fruits and a source of lean protein (such as Greek yogurt or boiled eggs).\n\n
+
+Lunch: Focus on a combination of lean proteins (chicken breast, turkey), whole grains (quinoa, whole wheat bread), healthy fats (nuts, seeds), and vegetables.\n\n
+
+Dinner: Opt for lean proteins (fish, skinless poultry), whole grains (barley, brown rice), and plenty of vegetables. Limit added fats and sugars.\n\n
+    </string>
+    <string name="obese"><b>4) Obese:</b>
+
+Breakfast: Prioritize high-fiber foods like whole grains, fruits, and vegetables, along with a source of lean protein (such as egg whites or low-fat dairy).\n\n
+
+Lunch: Include lean proteins (grilled chicken, beans), whole grains (whole wheat bread, quinoa), healthy fats (avocado, olive oil), and vegetables.\n\n
+
+Dinner: Emphasize lean proteins (fish, tofu), complex carbohydrates (sweet potatoes, whole wheat pasta), non-starchy vegetables, and limit added fats and sugars.\n\n</string>
 </resources>

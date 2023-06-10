@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Nutrition">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/wtsapp_green"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Fitness Friend"
+        app:titleTextColor="#FFF" />
+
+    <ScrollView
+        android:id="@+id/nutriscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/underweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/underweight"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/healthyweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/underweight"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/healthyweight"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/overweight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/healthyweight"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/overweight"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/obese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/overweight"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/obese"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"/>
+            />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
